@@ -70,8 +70,6 @@ var starH = {
    hizAyari : 5
 };
 
-
-
 var miniH = {
     HizAyari2 : 5
 };
@@ -178,29 +176,10 @@ var ciz = function () {
 };
 
 var enSon = function () {
-    
-    
         hareket();
         ciz();
-        
         requestAnimationFrame(enSon);
     
-    // else if (sayac == 0) {
-        
-    //     button.value = "Tekrar Dene";
-    //     button.style.display = "block";
-    //     button.addEventListener('click', function () {
-    //         sayac = 10;
-    //         area.src="images/background3.gif";
-    //         score = 0;
-    //         enSon();
-    //         koordinat();
-            
-    //         button.style.display = "none";
-            
-
-    //     })
-    // }
     ballH.x += dx;
     ballH.y += dy; 
 };
