@@ -53,7 +53,7 @@ addEventListener('keyup', function (event) {
 var starPosX = (canvas.width / 2)-35;
 var starPosY = canvas.height - 12;
 
-var dx = -2;
+var dx = 2;
 var dy= 2;
 
 
@@ -130,7 +130,7 @@ if(ballH.x <= 0 || ballH.x > 445){
     if (68 in tus && miniH.x < 386) {
         miniH.x += miniH.HizAyari2;
     };
-    if ((starH.x <= (ballH.x + 32) && starH.y <= (ballH.y + 32) && miniH.x <= (starH.x + 32) && miniH.y <= (starH.y + 32)) ) {
+    if ((starH.x  > (ballH.x ) && starH.y <= (ballH.y + 20) ) ) {
         score = score + 10;
         dy = -dy
     }
